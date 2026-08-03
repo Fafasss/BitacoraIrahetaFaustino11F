@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitácora Faustino Iraheta</title>
     <style>
-        html, body{
+        html, body {
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #8c00ff;
         }
-        body{
-            display:flex;
+        body {
+            display: flex;
             flex-direction: column;
             text-align: center;
         }
-        header{
+        header {
             padding: 20px;
             background-color: rgba(162, 0, 255, 0.974);
         }
-        h1{
-            color:rgb(255, 255, 255);
+        h1 {
+            color: rgb(255, 255, 255);
             font-size: 2.5rem;
             text-shadow:
-            0 0 7px #ffff,
-            0 0 10px #aa00ffb4,
-            0 0 21px #e600ff2d,
-            0 0 41px rgb(115, 255, 0);
+                0 0 7px #ffff,
+                0 0 10px #aa00ffb4,
+                0 0 21px #e600ff2d,
+                0 0 41px rgb(115, 255, 0);
             text-transform: uppercase;
             letter-spacing: 2px;
             margin: 0;
         }
-        main{
+        main {
             flex: 1;
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
-        footer{
+        footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -46,11 +46,12 @@
             border-top: 1px solid rgb(255, 255, 255);
             background-color: rgba(0, 0, 0, 0.491);
             margin-top: 20px;
+            color: #fff;
         }
-        .logo-colegio{
+        .logo-colegio {
             transition: transform 0.3s ease;
         }
-        .logo-colegio:hover{
+        .logo-colegio:hover {
             transform: scale(1.5);
         }
 
@@ -65,14 +66,14 @@
             border: 1px solid #eeeeee;
             transition: 0.3s;
         }
-        .entrada-card:hover{
+        .entrada-card:hover {
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }    
         .entrada-card h3 {
             color: #4a148c;
             margin-top: 0;
         }
-        .entrada-card p{
+        .entrada-card p {
             color: #333;
             line-height: 1.6;
         }
@@ -83,78 +84,111 @@
             width: 100%;
             border-radius: 10px;
             overflow: hidden;
-            background-color: #000; /* Fondo negro para que el video luzca mejor */
+            background-color: #000;
         }
-        iframe, video {
+        iframe, video, img {
             width: 100%;
+            max-width: 100%;
+            height: auto;
             display: block;
             border: none;
         }
-
+        iframe {
+            height: 500px;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Bitacora Segunda y Tercera Unidad</h1>
+        <h1>Bitácora Segunda y Tercera Unidad</h1>
     </header>
 
     <main>
-        <!-- ENTRADA 1: PDF -->
+        <!-- SEMANA 1: PDF -->
         <div class="entrada-card">
-            <h3>Entrada 1: Introduccion</h3>
-            <p>Esta semana aprendimos sobre Arduinos y su importancia en la automatizacion.</p>           
+            <h3>Semana 1: Introducción</h3>
+            <p>Esta semana aprendimos sobre Arduinos y su importancia en la automatización.</p>            
             <div class="media-container">
-                <!-- Asegurate de que el nombre del archivo sea identico -->
-                <iframe src="c:\Users\Alumno Capouilliez\Downloads\Introduccion Arduino (2).pdf" height="500px"></iframe>
+                <iframe src="Introduccion Arduino1.pdf"></iframe>
             </div>
             <p><small><a href="Introduccion Arduino1.pdf" target="_blank">Ver PDF en pantalla completa</a></small></p>
         </div>
 
-        <!-- ENTRADA 2: VIDEO LOCAL -->
+        <!-- SEMANA 2: IMAGEN -->
         <div class="entrada-card">
-            <h3>Entrada 2: Practica en Clase</h3>
-            <p>En esta sesion realizamos la primera conexion fisica de un LED intermitente utilizando la placa de Arduino y programacion basica.</p>           
+            <h3>Semana 2: Práctica en Clase</h3>
+            <p>En esta sesión realizamos la primera conexión física de un LED intermitente utilizando la placa de Arduino y programación básica.</p>            
             <div class="media-container">
-                <!-- Cambia 'nombre_de_tu_video.mp4' por el nombre real de tu archivo de video -->
+                <!-- Cambia 'imagen_semana2.jpg' por el nombre exacto de tu imagen -->
+                <img src="imagen_semana2.jpg" alt="Práctica Arduino Semana 2">
+            </div>
+        </div>
+
+        <!-- SEMANA 3: VIDEO -->
+        <div class="entrada-card">
+            <h3>Semana 3: Circuito a Mano</h3>
+            <p>Comenzamos a realizar un circuito a mano.</p>
+            <div class="media-container">
                 <video controls>
-                    <source src="c:\Users\Alumno Capouilliez\Documents\Iraheta11F\Grabacion 2026-05-15 120136.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproduccion de videos locales.
+                    <source src="recursos/videoled1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
                 </video>
             </div>
         </div>
+
+        <!-- SEMANA 4: VIDEO -->
+        <div class="entrada-card">
+            <h3>Semana 4: Ensamblaje</h3>
+            <p>Realizamos un circuito a mano y probamos su funcionamiento inicial.</p>
+            <div class="media-container">
+                <video controls>
+                    <source src="VID-20260722-WA0009.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
         </div>
 
-        <div class="semana">
-             <h3>Semana 3</h3>
-            <p>Comenzamos a realizar un circuito a mano.</p>
-                 <video width="100%" height="400" controls>
-                    <source src="recursos/videoled1.mp4" type="video/mp4">
-
-                 </video>
+        <!-- SEMANA 5: VIDEO -->
+        <div class="entrada-card">
+            <h3>Semana 5: Montaje de Circuito</h3>
+            <p>Continuamos con el montaje del circuito, realizando las conexiones y verificando su funcionamiento.</p>
+            <div class="media-container">
+                <video controls>
+                    <source src="video_semana5.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
             </div>
-        <h3>Semana 4</h3>
-        <p>Realizamos un circuito a mano.</p>
-                <video controls width="600">
-                    <source src="VID-20260722-WA0009.mp4" type="video/mp4">
+        </div>
 
-                    </video>      
-                </div>
+        <!-- SEMANA 6: VIDEO -->
+        <div class="entrada-card">
+            <h3>Semana 6: Pruebas de Código</h3>
+            <p>Programamos y probamos un circuito con luces LED para verificar que encendieran correctamente según el código realizado.</p>
+            <div class="media-container">
+                <video controls>
+                    <source src="video_semana6.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+        </div>
 
-        <div class="semana">
-             <h3>Semana 5</h3>
-             <p>Continuamos con el montaje del circuito, realizando las conexiones y verificando su funcionamiento.</p>
-             </div>
+        <!-- SEMANA 7: VIDEO -->
+        <div class="entrada-card">
+            <h3>Semana 7: Proyecto Final</h3>
+            <p>Finalizamos la integración del circuito y realizamos las pruebas definitivas de funcionamiento.</p>
+            <div class="media-container">
+                <video controls>
+                    <source src="video_semana7.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+        </div>
 
-        <div class="semana">
-             <h3>Semana 6</h3>
-             <p>Programamos y probamos un circuito con luces LED para verificar que encendieran correctamente segun el codigo realizado.</p>
-
-        <h4 style="color: #666; margin-top: 50px;">Contenido Pagina WEB</h4>
     </main>
 
     <footer>
-        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="25" width="100" class="logo-colegio">
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="25" width="100" class="logo-colegio" alt="Logo Colegio">
         <span>Faustino Iraheta</span>
     </footer>
 
